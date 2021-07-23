@@ -4,7 +4,7 @@ Section: misc
 Priority: optional
 Standards-Version: 3.9.9
 Build-Depends: debhelper (>= 9),
-               dh-systemd
+               systemd
 
 Package: fetchmail-conf-d
 Architecture: all
