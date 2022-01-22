@@ -7,6 +7,8 @@ User=root
 ExecStart=/usr/bin/fetchmail -v -f /etc/fetchmailrc.d/%i.config \
 	-N --syslog --sslcertck --pidfile /var/run/fetchmail/%i.pid
 Restart=always
+RestartSec=5s
+StartLimitIntervalSec=0
 RuntimeDirectory=fetchmail
 RuntimeDirectoryMode=0750
 
